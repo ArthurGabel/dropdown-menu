@@ -1,0 +1,123 @@
+html{ 
+  font-size: 62.5%
+}
+
+:root {
+  --primary-color: coral;
+  --secondary-color: #e7e7e7;
+  --light: #f4f4f4;
+  --dark: #000;
+  --max-width: 1300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 1.6rem/1.6 'Arial', sans-serif;
+  background: var(--light);
+  color: var(--dark);
+}
+
+#navbar {
+  background: var(--secondary-color);
+  position: fixed;
+  width: 100vw;
+}
+
+#navbar .menu-container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+#navbar ul li {
+  display: inline-block;
+  position: relative;
+  list-style: none;
+  padding: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+#navbar ul li:hover {
+  cursor: pointer;
+  background: var(--primary-color);
+  color: var(--light);
+}
+
+#navbar ul li:hover a {
+  color: var(--light);
+}
+
+/* -Hidde and show drop-menu- */
+#navbar .drop-menu {
+  display: none;
+}
+
+#navbar ul li:hover .drop-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  margin-top: 20px;
+}
+/* -- */
+
+#navbar ul li:hover .drop-menu li {
+  display: block;
+  background: var(--secondary-color);
+  padding: 5px 20px;
+  border-bottom: var(--primary-color) solid 1px;
+}
+
+#navbar ul li:hover .drop-menu li a {
+  font-size: 1.3rem;
+  color: var(--dark);
+}
+
+#navbar ul li:hover .drop-menu li:hover {
+  border-left: var(--primary-color) solid 2px;
+  border-right: var(--primary-color) solid 2px;
+}
+
+#showcase {
+  background: var(--primary-color);
+  height: 100vh;
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.showcase-content h1 {
+  color: var(--light);
+  font-size: 8rem;
+  font-weight: 400;
+}
+
+/* #main {
+  background: var(--primary-color);
+  height: 100vh;
+  width: 100vw;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} */
