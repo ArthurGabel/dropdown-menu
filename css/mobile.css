@@ -1,0 +1,50 @@
+#navbar .menu-container > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar ul li {
+  padding: 20px 5px;
+}
+
+#navbar ul li:hover .drop-menu {
+  width: 150px
+}
+
+#navbar ul li:hover .drop-menu li {
+  padding: 5px 5px
+}
+
+#navbar ul li:hover .drop-menu li:hover {
+  border-left: var(--primary-color) solid 1px;
+  border-right: var(--primary-color) solid 1px;
+}
+
+.showcase-content h1 {
+  font-size: 6rem;
+}
+
+@media (max-width: 350px) {
+  #navbar ul li {
+    padding: 15px 5px;
+    font-size: 1.2rem;
+   
+  }
+
+  #navbar ul li:hover .drop-menu {
+    width: 110px
+  }
+
+  #navbar ul li:hover .drop-menu li {
+    border-bottom: none;
+  }
+
+  #navbar ul li:hover .drop-menu li a {
+    font-size: 1.2rem;
+  }
+
+  .showcase-content h1 {
+    font-size: 5rem;
+  }
+}
